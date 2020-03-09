@@ -1,0 +1,46 @@
+.body{backgroud-image:url('/home/sem6b7/umraz0006/backgrnd5.jpeg'); background:repeat:repeat;}
+p.one {border-style:dotted;
+	border-color:red;}
+
+p.two {border-style:dashed	;
+	border-color:green;}
+
+p.three {border-style:ridge;
+	border-color:blue;
+	margin:25px 25px 25px 25px;
+	text-align:center;
+	padding:50px 50px 50px 50px;	
+	}
+
+p.four {border-style:groove;
+	border-color:red;}
+
+p.five {border-style:none;
+	border-color:red;}
+
+p.six {border-style:hidden;
+	border-color:red;}
+
+p.seven {border-style:solid;
+	border-color:red;}
+
+p.eight {border-style:inset;
+	border-color:red;}
+
+p.nine {border-style:outset;
+	border-color:pink;}
+
+p.ten {border-style:dotted;
+	border-color:yellow;}
+img {
+  border-radius: 8px;
+	backgroung:repeat;}
+}
+
+p.Margin {margin: 70px;
+  border: 1px solid #4CAF50;
+	margin-top:25px; 
+	margin-bottom:25px; 
+	margin-left:25px;
+	margin-right:25px;}
+
