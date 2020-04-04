@@ -1,0 +1,65 @@
+<DOCTYPE! html>
+<html lang="en" dir="alt">
+<head>
+<meta charset="utf-8">
+<title> My HTML form </title>
+<link rel="stylesheet" href="C:\Users\Umraz\Desktop\IT mini project\forms2\form3.css">
+
+<Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+ 
+</head>
+
+<body>
+<img src="C:\Users\Umraz\Desktop\IT mini project\img\14.jpg">
+
+
+
+	<form action="index.html" class="login-form">
+		<h1> Login </h1>
+		
+		
+		
+		
+		
+		
+		<div class="txtb">
+		<input type="text" >
+		<span data-placeholder="Username"> </span>
+		</div>
+		
+		<div class="txtb">
+		<input type="Password" >
+		<span data-placeholder="Password"> </span>
+		</div>
+		
+		
+		<input type="submit" class="logbtn" value="Login">
+		
+		<div class="bottom-text">
+			don't have account.? <a href="https://youtube.com" target="_blank"> Sign Up </a>
+			
+		</div>
+	
+	
+	
+	</form>
+	
+	<script type="text/javascript">
+		$(".txtb input").on("focus",function(){
+			$(this).addClass("focus");
+		
+		});
+		
+		
+		$(".txtb input").on("blur",function(){
+			if($(this).val()=="")
+			$(this).addClass("focus");
+		
+		});
+		
+	</script>
+	
+
+
+</body>
+</html>
