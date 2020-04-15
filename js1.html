@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Dynamic stacking of paragraphs </title>
+<script type = "text/javascript">
+var oldTop="p1";
+function toTop(newTop)
+{
+var domTop=document.getElementById(oldTop).style;
+var domNew=document.getElementById(newTop).style;
+domTop.zIndex=0;
+domNew.zIndex=10;
+oldTop=newTop;
+}
+</script>
+
+<style type = "text/css">
+
+.para1{
+color:brown;
+width:300px;
+height:110px;
+border:2px solid black;
+position:absolute;
+top:120px;
+left:400px;
+zIndex=0;
+padding:5px;
+background-Color:lime;
+}
+.para2{
+color:black;
+width:300px;
+height:110px;
+border:2px solid red;
+position:absolute;
+top:160px;
+left:420px;
+zIndex=0;
+padding:5px;
+background-Color:orange;
+}
+.para3{
+color:blue;
+width:300px;
+height:110px;
+display:block;
+border:2px solid green;
+position:absolute;
+top:200px;
+left:450px;
+zIndex=0;
+padding:5px;
+background-Color:yellow;
+}
+
+</style>
+</head>
+
+<body bgcolor = "lightgrey">
+<p class = "para1" id = "p1" onmouseover = "toTop('p1');" >
+HTML stands for Hypertext Markup Language <br> It is used to create web pages <br> It describes the structure of the web page</br>
+HTML is not a programming language.</p>
+<p class="para2" id="p2" onmouseover="toTop('p2');" >
+CSS stands for Cascading Style Sheets <br> CSS describes how HTML elements are <br> to be displayed on screen, paper, or in other media
+<br>CSS saves a lot of work</p>
+<p class="para3" id="p3" onmouseover="toTop('p3');" >
+JavaScript is a scripting language used to create and control dynamic website content.<br>It is a high-level, often just-in-time compiled,and multi-paradigm.JavaScript is most commonly used as a client side scripting language
+
+</body>
+</html>
